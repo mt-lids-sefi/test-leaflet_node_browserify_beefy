@@ -12,8 +12,11 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
 
 
 
-
-
+var mutuales = require('./mutuales.json')
+for (let index = 0; index < mutuales["mutuales"].length; index++) {
+	const element = mutuales["mutuales"][index];
+	
+}
 
 /*
 
