@@ -72,7 +72,12 @@ request.onload = function () {
 	if (request.status >= 200 && request.status < 400) {
 		resp = resp["resultados"]
 		resp.forEach(dire => {
-			console.log(dire)
+			dire.direcciones.forEach(dir => {
+				console.log(dir.ubicacion.lat, dir.ubicacion.lon)
+				if (dir.ubicacion.lat){
+					var marker = L.marker([dir.ubicacion.lat, dir.ubicacion.lon]).addTo(mymap);
+				}
+			});
 		});
 	} else {
 		console.log('error');
