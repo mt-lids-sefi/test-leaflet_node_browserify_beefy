@@ -14,20 +14,7 @@
             "Fecha_Inscripción": "31/01/1947",
             "Estado": "Vigente"
         },
-        {
-            "Nombre": "A. ESPAÑOLA DE SOCORROS MUTUOS DE NEUQUEN",
-            "Provincia": "NEUQUEN",
-            "Direccion": "AV. ARGENTINA N° 245 PISO 2",
-            "Localidad": "NEUQUEN",
-            "Partido_Depto": "CONFLUENCIA",
-            "Codigo_Postal": "Q8300",
-            "Telefono": "0299-4423073",
-            "EMail": "asocespnqn2@speedy.com.ar",
-            "CUIT": "30561507801",
-            "Tipo_Entidad": "MUTUALES",
-            "Fecha_Inscripción": "28/02/1947",
-            "Estado": "Vigente"
-        },
+       
         {
             "Nombre": "A. ITALO ARGENTINA MUTUALISTA \"XX DE SETIEMBRE\"",
             "Provincia": "CORDOBA",
@@ -70,20 +57,7 @@
             "Fecha_Inscripción": "31/05/1946",
             "Estado": "Vigente"
         },
-        {
-            "Nombre": "A. ESPAÑOLA DE SOCORROS MUTUOS DE VILLA ANGELA",
-            "Provincia": "CHACO",
-            "Direccion": "LISANDRO DE LA TORRE Y ESPAÑA",
-            "Localidad": "VILLA ANGELA",
-            "Partido_Depto": "MAYOR LUIS J FONTANA",
-            "Codigo_Postal": "H3540",
-            "Telefono": "",
-            "EMail": "",
-            "CUIT": "",
-            "Tipo_Entidad": "MUTUALES",
-            "Fecha_Inscripción": "20/02/1947",
-            "Estado": "Vigente"
-        },
+
         {
             "Nombre": "S. ITALIANA DE SOCORROS MUTUOS",
             "Provincia": "BUENOS AIRES",
@@ -126,20 +100,7 @@
             "Fecha_Inscripción": "30/01/1947",
             "Estado": "Vigente"
         },
-        {
-            "Nombre": "A. ESPAÑOLA DE SOCORROS MUTUOS DE RIO GALLEGOS",
-            "Provincia": "SANTA CRUZ",
-            "Direccion": "AV. ROCA N° 866 PISO 1",
-            "Localidad": "RIO GALLEGOS",
-            "Partido_Depto": "GUER AIKE",
-            "Codigo_Postal": "Z9400",
-            "Telefono": "02966-422131",
-            "EMail": "aesmrg@speedy.com.ar",
-            "CUIT": "30673674743",
-            "Tipo_Entidad": "MUTUALES",
-            "Fecha_Inscripción": "11/02/1947",
-            "Estado": "Vigente"
-        },
+    
         {
             "Nombre": "S. ITALIANA DE SOCORROS MUTUOS DE POSADAS",
             "Provincia": "MISIONES",
@@ -154,20 +115,7 @@
             "Fecha_Inscripción": "24/02/1947",
             "Estado": "Vigente"
         },
-        {
-            "Nombre": "CENTRO PROTECCION RECIPROCA DE CHOFERES DE MENDOZA",
-            "Provincia": "MENDOZA",
-            "Direccion": "PATRICIAS MENDOCINAS N° 1053 PISO 1°",
-            "Localidad": "MENDOZA",
-            "Partido_Depto": "CAPITAL (MZ)",
-            "Codigo_Postal": "M5500EAK",
-            "Telefono": "0261-4295697",
-            "EMail": "",
-            "CUIT": "30526046494",
-            "Tipo_Entidad": "MUTUALES",
-            "Fecha_Inscripción": "04/02/1947",
-            "Estado": "Vigente"
-        },
+ 
         {
             "Nombre": "A. ESPAÑOLA DE SOCORROS MUTUOS DE CIPOLLETTI",
             "Provincia": "RIO NEGRO",
@@ -196,20 +144,7 @@
             "Fecha_Inscripción": "06/12/1949",
             "Estado": "Vigente"
         },
-        {
-            "Nombre": "CONFEDERACION ARGENTINA DE MUTUALIDADES (CAM)",
-            "Provincia": "CAPITAL FEDERAL",
-            "Direccion": "AV. DE MAYO N° 784 PISO 2",
-            "Localidad": "C. AUTONOMA DE BS AS",
-            "Partido_Depto": "",
-            "Codigo_Postal": "C1084",
-            "Telefono": "",
-            "EMail": "mghernetti@camargentina.org.ar",
-            "CUIT": "30683114320",
-            "Tipo_Entidad": "CONFEDERACIONES DE MUTUALES",
-            "Fecha_Inscripción": "20/04/1956",
-            "Estado": "Vigente"
-        },
+        
         {
             "Nombre": "S. ESPAÑOLA DE SOCORROS MUTUOS DE PUERTO DESEADO",
             "Provincia": "SANTA CRUZ",
@@ -378,20 +313,7 @@
             "Fecha_Inscripción": "24/04/1947",
             "Estado": "Vigente"
         },
-        {
-            "Nombre": "A. M. DEL PERSONAL DE LAS EMPRESAS BGH - SUR",
-            "Provincia": "TIERRA DEL FUEGO",
-            "Direccion": "JOAQUIN GOYTISOLO N° 636 PISO PB OF/DTO/LOC:A",
-            "Localidad": "RIO GRANDE",
-            "Partido_Depto": "RIO GRANDE",
-            "Codigo_Postal": "V9420",
-            "Telefono": "",
-            "EMail": "",
-            "CUIT": "30650157881",
-            "Tipo_Entidad": "MUTUALES",
-            "Fecha_Inscripción": "03/08/1984",
-            "Estado": "Vigente"
-        },
+        
         {
             "Nombre": "A. ESPAÑOLA DE SOCORROS MUTUOS DE VIEDMA",
             "Provincia": "RIO NEGRO",

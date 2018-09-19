@@ -1,6 +1,6 @@
 // Initialize leaflet.js
 var L = require('leaflet');
-
+var request = new XMLHttpRequest();
 
 
 var mymap = L.map('mymap').setView([-34.587997, -58.466492], 4);
@@ -13,10 +13,73 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
 
 
 var mutuales = require('./mutuales.json')
+/*var dire = mutuales["mutuales"][0];
+console.log(dire)
+
+
+request.open('POST', 'https://apis.datos.gob.ar/georef/api/direcciones', true);
+	request.onload = function () {
+
+	// Begin accessing JSON data here
+	var resp = JSON.parse(this.response);
+
+	if (request.status >= 200 && request.status < 400) {
+		console.log(resp);
+	} else {
+		console.log('error');
+	}
+	}
+	request.setRequestHeader("Content-Type", "application/json");
+	var data = {
+		"direcciones": [
+			{
+				"direccion": dire["Direccion"],
+				"campos": "id, nombre, altura, ubicacion.lat, ubicacion.lon, provincia.nombre,  departamento.nombre"
+				,"provincia": dire["Provincia"] 
+			}
+		]
+	}
+	request.send(JSON.stringify(data));*/
+var data= {"direcciones": []}
+
 for (let index = 0; index < mutuales["mutuales"].length; index++) {
 	const element = mutuales["mutuales"][index];
+
+	var dire = 
+		{
+			"direccion": element["Direccion"],
+			"campos": "id, nombre, altura, ubicacion.lat, ubicacion.lon, provincia.nombre,  departamento.nombre"
+			,"provincia": element["Provincia"] 
+		}
 	
+	data.direcciones.push(dire);
+	
+
 }
+
+//console.log(data);
+
+
+var myJsonString = JSON.stringify(data);
+console.log(myJsonString);
+request.open('POST', 'https://apis.datos.gob.ar/georef/api/direcciones', true);
+request.setRequestHeader("Content-Type", "application/json");
+request.onload = function () {
+
+	// Begin accessing JSON data here
+	var resp = JSON.parse(this.response);
+
+	if (request.status >= 200 && request.status < 400) {
+		resp = resp["resultados"]
+		resp.forEach(dire => {
+			console.log(dire)
+		});
+	} else {
+		console.log('error');
+	}
+}
+
+request.send(myJsonString);
 
 /*
 
