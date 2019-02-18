@@ -48,7 +48,7 @@ for (let index = 0; index < mutuales["mutuales"].length; index++) {
 	var dire = 
 		{
 			"direccion": element["Direccion"],
-			"campos": "id, nombre, altura, ubicacion.lat, ubicacion.lon, provincia.nombre,  departamento.nombre"
+			"campos": "calle.id, calle.nombre, altura.unidad, ubicacion.lat, ubicacion.lon, provincia.nombre,  departamento.nombre"
 			,"provincia": element["Provincia"] 
 		}
 	
@@ -68,7 +68,7 @@ request.onload = function () {
 
 	// Begin accessing JSON data here
 	var resp = JSON.parse(this.response);
-
+	console.log(resp)
 	if (request.status >= 200 && request.status < 400) {
 		resp = resp["resultados"]
 		resp.forEach(dire => {
@@ -80,7 +80,7 @@ request.onload = function () {
 			});
 		});
 	} else {
-		console.log('error');
+		console.log('error bad request');
 	}
 }
 
