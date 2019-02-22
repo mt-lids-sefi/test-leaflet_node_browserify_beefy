@@ -14,6 +14,21 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
 var markers = L.markerClusterGroup();
 
 var mutuales = require('./mutuales.json')
+
+
+
+
+/**DATSO DE GEOVIN */
+
+var geovin = require('./GeoVin2.json')
+
+
+for (let index = 0; index < geovin["geovin"].length; index++) {
+	const element = geovin["geovin"][index];
+	markers.addLayer(L.marker([element.lat, element.lng]));
+}
+mymap.addLayer(markers);
+
 /*var dire = mutuales["mutuales"][0];
 console.log(dire)
 
@@ -41,6 +56,10 @@ request.open('POST', 'https://apis.datos.gob.ar/georef/api/direcciones', true);
 		]
 	}
 	request.send(JSON.stringify(data));*/
+
+
+/**TRAER DIRECCIONES DE DATOSGOBAR */	
+/*
 var data= {"direcciones": []}
 
 for (let index = 0; index < mutuales["mutuales"].length; index++) {
@@ -92,7 +111,7 @@ request.onload = function () {
 }
 
 request.send(myJsonString);
-
+*/
 /*
 
 
