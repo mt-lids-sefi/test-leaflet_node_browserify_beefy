@@ -1,5 +1,6 @@
 // Initialize leaflet.js
 var L = require('leaflet');
+require('leaflet.markercluster')
 var request = new XMLHttpRequest();
 
 
@@ -10,7 +11,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
         id: 'mapbox.streets'
 }).addTo(mymap);
 
-
+var markers = L.markerClusterGroup();
 
 var mutuales = require('./mutuales.json')
 /*var dire = mutuales["mutuales"][0];
@@ -69,7 +70,7 @@ request.onload = function () {
 	// Begin accessing JSON data here
 	var resp = JSON.parse(this.response);
 	console.log(resp)
-	var markers = L.markerClusterGroup();
+	
 
 	if (request.status >= 200 && request.status < 400) {
 		resp = resp["resultados"]
