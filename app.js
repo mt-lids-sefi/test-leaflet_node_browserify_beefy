@@ -69,16 +69,22 @@ request.onload = function () {
 	// Begin accessing JSON data here
 	var resp = JSON.parse(this.response);
 	console.log(resp)
+	var markers = L.markerClusterGroup();
+
 	if (request.status >= 200 && request.status < 400) {
 		resp = resp["resultados"]
 		resp.forEach(dire => {
 			dire.direcciones.forEach(dir => {
 				console.log(dir.ubicacion.lat, dir.ubicacion.lon)
 				if (dir.ubicacion.lat){
-					var marker = L.marker([dir.ubicacion.lat, dir.ubicacion.lon]).addTo(mymap);
+					markers.addLayer(L.marker([dir.ubicacion.lat, dir.ubicacion.lon]));
+
+
+					//var marker = L.marker([dir.ubicacion.lat, dir.ubicacion.lon]).addTo(mymap);
 				}
 			});
 		});
+		mymap.addLayer(markers);
 	} else {
 		console.log('error bad request');
 	}

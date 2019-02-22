@@ -22,7 +22,8 @@
     "url": "https://github.com/g07kore/Leaflet-Tutorial/issues"
   },
   "dependencies": {
-    "leaflet": "^1.0.1"
+    "leaflet": "^1.0.1",
+    "leaflet.markercluster": "^1.4.1"
   },
   "devDependencies": {
     "beefy": "^2.1.8",
